@@ -1,30 +1,15 @@
 # Aidan & Cade's Engineering 4 Notebook
 
-## Section 1
-### Sub-Section 1.1
-## Section 2
-x
-x
-x
-x
-x
-x
-x
-x
-x
-x
-x
-x
-x
-x
-x
-x
-x
-x
-x
-x
-x
-x
-x
-x
-[Section 1](https://github.com/ADaMiller14/Engineering_4_Notebook/edit/master/README.md#section-1)
+[1 Raspberry Pi](https://github.com/ADaMiller14/Engineering_4_Notebook/edit/master/README.md#raspberry-pi)
+-[1.1 Hello Pi](https://github.com/ADaMiller14/Engineering_4_Notebook/edit/master/README.md#hello-pi)
+[2 Python](https://github.com/ADaMiller14/Engineering_4_Notebook/edit/master/README.md#python)
+-[2.1 Hello Python](https://github.com/ADaMiller14/Engineering_4_Notebook/edit/master/README.md#hello-python)
+___
+## Raspberry Pi
+stuff
+### Hello Pi
+stuff
+## Python
+stuff
+### Hello Python
+stuff
