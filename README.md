@@ -13,7 +13,7 @@
 
 3 [GPIO](https://github.com/ADaMiller14/Engineering_4_Notebook/edit/master/README.md#GPIO)
   - 3.1 [GPIO Pins: Bash](https://github.com/ADaMiller14/Engineering_4_Notebook/edit/master/README.md#GPIO-Pins:-Bash)
-  - 3.2 [GPIO Pins: Python](https://github.com/ADaMiller14/Engineering_4_Notebook/edit/master/README.md#GPIO-Pins: Python)
+  - 3.2 [GPIO Pins: Python](https://github.com/ADaMiller14/Engineering_4_Notebook/edit/master/README.md#GPIO-Pins:-Python)
   - 3.3 [GPIO Pins: SSH](https://github.com/ADaMiller14/Engineering_4_Notebook/edit/master/README.md#GPIO-Pins:-SSH)
   - 3.4 [GPIO Pins: 12C](https://github.com/ADaMiller14/Engineering_4_Notebook/edit/master/README.md#GPIO-Pins:-12C)
 ___
