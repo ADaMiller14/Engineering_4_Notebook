@@ -11,13 +11,17 @@
   - 2.4 [Python Program 03 - Strings and Loops](https://github.com/ADaMiller14/Engineering_4_Notebook/edit/master/README.md#strings-and-loops)
   - 2.5 [Python Challenge - MSP](https://github.com/ADaMiller14/Engineering_4_Notebook/edit/master/README.md#hangman)
 ___
-## Raspberry Pi
+## Introductory Projects
+stuff about things
 ### Hello Raspberry Pi Zero
 stuff
 ### Hello Mathematica
 stuff
-## Python
+### Hello Git
 stuff
+### Git Forks and Clones
+stuff
+## Python
 ### Hello Python
 stuff
 ### Calculator
@@ -26,14 +30,28 @@ stuff
 stuff
 ### Strings and Loops
 stuff
-### Hangman
+### MSP (Modular Sucker Punch)
 stuff
-### GPIO Pins
+## GPIO (Great Potatoes in Onions)
+### GPIO Pins - Bash
 stuff
-#### Bash
+### GPIO Pins - Python
 stuff
-#### SSH
+### GPIO Pins - SSH
 stuff
-#### Hello Flask
+## Flask & son
+### Hello Flask
 stuff
-#### Flask
+### GPIO Pins - Flask
+stuff
+## Big Boi Projects
+Putting the stuff together
+### GPIO Pins - 12C
+stuff
+### Headless (spanish inquisition?)
+stuff
+### Pi Camera (we see you)
+stuff
+### Hack Your Stuff (we see you more now)
+stuff
+### Copypasta (how'd the italian chef die? He copypasta way)
