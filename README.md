@@ -17,7 +17,9 @@
   - 3.3 [GPIO Pins: SSH](https://github.com/ADaMiller14/Engineering_4_Notebook/edit/master/README.md#GPIO-Pins:-SSH)
   - 3.4 [GPIO Pins: 12C](https://github.com/ADaMiller14/Engineering_4_Notebook/edit/master/README.md#GPIO-Pins:-12C)
   
-4) 
+4) [Flask & Son](https://github.com/ADaMiller14/Engineering_4_Notebook/edit/master/README.md#Flask-&-Son)
+  - 4.1 [Hello Flask](https://github.com/ADaMiller14/Engineering_4_Notebook/edit/master/README.md#Hello-Flask)
+  - 4.2 [Hydro Flask](https://github.com/ADaMiller14/Engineering_4_Notebook/edit/master/README.md#Hydro-Flask)
 ___
 ## Introductory Projects
 stuff about things
@@ -50,7 +52,7 @@ stuff
 stuff
 ### GPIO Pins: 12C
 stuff
-## Flask & son
+## Flask & Son
 ### Hello Flask
 stuff
 ### Hydro Flask
