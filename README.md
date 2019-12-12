@@ -10,6 +10,11 @@
   - 2.3 [Python program 02 - Quadratic Solver](https://github.com/ADaMiller14/Engineering_4_Notebook/edit/master/README.md#quadratic-solver)
   - 2.4 [Python Program 03 - Strings and Loops](https://github.com/ADaMiller14/Engineering_4_Notebook/edit/master/README.md#strings-and-loops)
   - 2.5 [Python Challenge - MSP](https://github.com/ADaMiller14/Engineering_4_Notebook/edit/master/README.md#hangman)
+3 [GPIO](https://github.com/ADaMiller14/Engineering_4_Notebook/edit/master/README.md#GPIO)
+  - 3.1 [GPIO Pins: Bash](https://github.com/ADaMiller14/Engineering_4_Notebook/edit/master/README.md#GPIO-Pins:-Bash)
+  - 3.2 [GPIO Pins: Python](https://github.com/ADaMiller14/Engineering_4_Notebook/edit/master/README.md#GPIO-Pins: Python)
+  - 3.3 [GPIO Pins: SSH](https://github.com/ADaMiller14/Engineering_4_Notebook/edit/master/README.md#GPIO-Pins:-SSH)
+  - 3.4 [GPIO Pins: 12C](https://github.com/ADaMiller14/Engineering_4_Notebook/edit/master/README.md#GPIO-Pins:-12C)
 ___
 ## Introductory Projects
 stuff about things
@@ -30,28 +35,30 @@ stuff
 stuff
 ### Strings and Loops
 stuff
-### MSP (Modular Sucker Punch)
+### MSP 
+Modular Sucker Punch
+## GPIO 
+Green Potatoes in Onions
+### GPIO Pins: Bash
 stuff
-## GPIO (Great Potatoes in Onions)
-### GPIO Pins - Bash
+### GPIO Pins: Python
 stuff
-### GPIO Pins - Python
+### GPIO Pins: SSH
 stuff
-### GPIO Pins - SSH
+### GPIO Pins: 12C
 stuff
 ## Flask & son
 ### Hello Flask
 stuff
-### GPIO Pins - Flask
+### Hydro Flask
 stuff
 ## Big Boi Projects
 Putting the stuff together
-### GPIO Pins - 12C
-stuff
-### Headless (spanish inquisition?)
-stuff
-### Pi Camera (we see you)
-stuff
-### Hack Your Stuff (we see you more now)
-stuff
-### Copypasta (how'd the italian chef die? He copypasta way)
+### Headless 
+spanish inquisition?
+### Pi Camera 
+we see you
+### Hack Your Stuff 
+we see you more now
+### Copypasta 
+how'd the italian chef die? He copypasta way
