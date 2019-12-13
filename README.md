@@ -4,7 +4,7 @@
   - 1.1 [Hello Raspberry Pi Zero](https://github.com/ADaMiller14/Engineering_4_Notebook#hello-raspberry-pi-zero)
   - 1.2 [Hello Mathematica](https://github.com/ADaMiller14/Engineering_4_Notebook#hello-mathematica)
   
-2) [Python](https://github.com/ADaMiller14/Engineering_4_Notebook#python)
+2) [Python Projects](https://github.com/ADaMiller14/Engineering_4_Notebook#python-projects)
   - 2.1 [Hello Python](https://github.com/ADaMiller14/Engineering_4_Notebook#hello-python)
   - 2.2 [Calculator](https://github.com/ADaMiller14/Engineering_4_Notebook#calculator)
   - 2.3 [Quadratic Solver](https://github.com/ADaMiller14/Engineering_4_Notebook#quadratic-solver)
