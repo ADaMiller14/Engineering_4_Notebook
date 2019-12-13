@@ -50,13 +50,13 @@ stuff
 Modular Sucker Punch
 ## GPIO 
 Green Potatoes in Onions
-### GPIO Pins: Bash
+### Bash
 stuff
-### GPIO Pins: Python
+### Python
 stuff
-### GPIO Pins: SSH
+### SSH
 stuff
-### GPIO Pins: 12C
+### 12C
 stuff
 ## Flask & Son
 ### Hello Flask
