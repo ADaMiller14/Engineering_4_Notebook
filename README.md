@@ -12,10 +12,10 @@
   - 2.5 [MSP](https://github.com/ADaMiller14/Engineering_4_Notebook#hangman)
 
 3) [GPIO](https://github.com/ADaMiller14/Engineering_4_Notebook#GPIO)
-  - 3.1 [Bash](https://github.com/ADaMiller14/Engineering_4_Notebook#GPIO-Pins:-Bash)
-  - 3.2 [Python](https://github.com/ADaMiller14/Engineering_4_Notebook#GPIO-Pins:-Python)
-  - 3.3 [SSH](https://github.com/ADaMiller14/Engineering_4_Notebook#GPIO-Pins:-SSH)
-  - 3.4 [12C](https://github.com/ADaMiller14/Engineering_4_Notebook#GPIO-Pins:-12C)
+  - 3.1 [Bash](https://github.com/ADaMiller14/Engineering_4_Notebook#GPIO-Pins:Bash)
+  - 3.2 [Python](https://github.com/ADaMiller14/Engineering_4_Notebook#GPIO-Pins:Python)
+  - 3.3 [SSH](https://github.com/ADaMiller14/Engineering_4_Notebook#GPIO-Pins:SSH)
+  - 3.4 [12C](https://github.com/ADaMiller14/Engineering_4_Notebook#GPIO-Pins:12C)
   
 4) [Flask & Son](https://github.com/ADaMiller14/Engineering_4_Notebook#Flask-&-Son)
   - 4.1 [Hello Flask](https://github.com/ADaMiller14/Engineering_4_Notebook#Hello-Flask)
