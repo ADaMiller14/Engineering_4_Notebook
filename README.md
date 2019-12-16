@@ -385,6 +385,7 @@ while cutscene == 1:
     if hangmanCheck(word, guess) == "1":
         if man < 7:
             man = man + 1
+            
 </pre>
 </details>
 
