@@ -28,9 +28,13 @@
     - 5.4 [Copypasta](https://github.com/ADaMiller14/Engineering_4_Notebook#Copypasta)
 ___
 ## Introductory Projects
-stuff about things
 ### Hello Raspberry Pi Zero
-stuff
+This was an introduction to pi and, more specifically, bash scripts.
+<details>
+<summary>####Code</summary>
+<br>
+stuff here
+</details>
 ### Hello Mathematica
 stuff
 ### Hello Git
