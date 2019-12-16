@@ -30,13 +30,16 @@ ___
 ## Introductory Projects
 ### Hello Raspberry Pi Zero
 This was an introduction to pi and, more specifically, bash scripts.
+
 <details>
 <summary>Code</summary>
 <br>
+    <pre>
 #!/bin/bash
 str="Hello World!" #declares the string
 for i in {1..10} #run the loop 10 times
 done
+</pre>
 </details>
 
 ### Hello Mathematica
@@ -55,7 +58,6 @@ This project was a dice roller. It's basically a RNG for the numbers 1-6.
 <summary>Code</summary>
 <br>
     <pre>
-&lt;br&gt;
 # Automatic Die Roller
 # Written By Aidan Miller & Cade Young
 
@@ -74,8 +76,8 @@ while x == 0:
         print("Roll again?")
     if input() == "x":
         exit()
-&lt;&#47;details&gt;
 </pre>
+</details>
 </details>
 
 ### Calculator
