@@ -31,20 +31,48 @@ ___
 ### Hello Raspberry Pi Zero
 This was an introduction to pi and, more specifically, bash scripts.
 <details>
-####<summary>Code</summary>
+<summary>Code</summary>
 <br>
-stuff here
+#!/bin/bash
+str="Hello World!" #declares the string
+for i in {1..10} #run the loop 10 times
+done
 </details>
 
 ### Hello Mathematica
-stuff
+This project was trying to figure out how to write a line of Mathematica to make a plot with sliders
+
+Unfortunately we did not push the code to github
 ### Hello Git
-stuff
+We set up Github on the pi.
 ### Git Forks and Clones
-stuff
+We forked a repository (class accounts) and cloned it to the pi. After, we added our names to it then committed it.
 ## Python
 ### Hello Python
-stuff
+This project was a dice roller. It's basically a RNG for the numbers 1-6.
+<details>
+<summary>Code</summary>
+<br>
+# Automatic Die Roller
+# Written By Aidan Miller & Cade Young
+
+import random
+from random import randint
+
+print ("Automatic D6 Roller")
+print ("Press Enter to roll, press x to exit")
+
+x = 0
+
+while x == 0:
+    if input() == "":
+        r1 = random.randint(1,6)
+        print((r1))
+        print("Roll again?")
+    if input() == "x":
+        exit()
+</details>
+
 ### Calculator
 stuff
 ### Quadratic Solver
