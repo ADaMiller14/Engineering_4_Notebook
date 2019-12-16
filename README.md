@@ -31,10 +31,11 @@ ___
 ### Hello Raspberry Pi Zero
 This was an introduction to pi and, more specifically, bash scripts.
 <details>
-<summary>####Code</summary>
+####<summary>Code</summary>
 <br>
 stuff here
 </details>
+
 ### Hello Mathematica
 stuff
 ### Hello Git
