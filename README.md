@@ -50,18 +50,14 @@ We forked a repository (class accounts) and cloned it to the pi. After, we added
 ## Python
 ### Hello Python
 This project was a dice roller. It's basically a RNG for the numbers 1-6.
-<pre>
-&lt;details&gt;
-&lt;summary&gt;How do I dropdown?&lt;&#47;summary&gt;
-&lt;br&gt;
-This is how you dropdown.
-&lt;&#47;details&gt;
-</pre>
-</details>
 
 <details>
 <summary>Code</summary>
 <br>
+    <pre>
+&lt;details&gt;
+&lt;summary&gt;How do I dropdown?&lt;&#47;summary&gt;
+&lt;br&gt;
 # Automatic Die Roller
 # Written By Aidan Miller & Cade Young
 
@@ -80,6 +76,9 @@ while x == 0:
         print("Roll again?")
     if input() == "x":
         exit()
+&lt;&#47;details&gt;
+</pre>
+</details>
 </details>
 
 ### Calculator
