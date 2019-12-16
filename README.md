@@ -55,8 +55,6 @@ This project was a dice roller. It's basically a RNG for the numbers 1-6.
 <summary>Code</summary>
 <br>
     <pre>
-&lt;details&gt;
-&lt;summary&gt;How do I dropdown?&lt;&#47;summary&gt;
 &lt;br&gt;
 # Automatic Die Roller
 # Written By Aidan Miller & Cade Young
@@ -78,7 +76,6 @@ while x == 0:
         exit()
 &lt;&#47;details&gt;
 </pre>
-</details>
 </details>
 
 ### Calculator
