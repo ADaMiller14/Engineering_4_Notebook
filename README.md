@@ -400,7 +400,207 @@ This was the saem as the previous project and, just like bash, we can't retrieve
 For this project we used out phones to turn off and on an LED via a wireless connection. There wasn't really code to it due to the nature of the assignment.
 
 ### 12C
+
+
+## Flask & Son
+### Hello Flask
+This assignment was to create a website that displayed "Hello World."
+<details>
+<summary>Code</summary>
+<br>
+    <pre>
+
+    from flask import Flask
+
+    app = Flask(__name__)
+
+    @app.route("/")
+    def hello_world():
+	    return "hello world!"
+
+    if __name__ == "__main__":
+	    app.run(host="0.0.0.0", port=80)
+</pre>
+</details>
+</details>
+
+### Flask (GPIO)
+We created a website and spoofed it up a bit by adding buttons to control things (LEDs).
+
+<details>
+<summary>Python Code</summary>
+<br>
+    <pre>
+
+    from flask import Flask, render_template, request
+    import RPi.GPIO as GPIO
+    import time
+
+    GPIO.setwarnings(False)
+    GPIO.setmode(GPIO.BCM)
+    GPIO.setup(17,GPIO.OUT)
+
+    app = Flask(__name__)
+
+    togglea = True
+
+    @app.route("/", methods=["GET","POST"])
+    def index():
+    	global togglea
+    	no1 = "ERROR"
+    	y = "#000000"
+    	while True:
+    		if request.method == "POST":
+    			msg = request.form.get("submitBtn")
+    			if msg == "GO":
+    				if togglea == True:
+	    				togglea = False
+    				else:
+		    			togglea = True
+		    else:
+		    	GPIO.output(17,GPIO.LOW)
+    			msg = "No click yet."
+
+	    	if togglea == True:
+		    	GPIO.output(17,GPIO.LOW)
+	    		no1 = "Stealth Mode: ON"
+		    	y = "#000000"
+		    else:
+		    	if togglea == False:
+			    	GPIO.output(17,GPIO.HIGH)
+				    no1 = "Stealth Mode: OFF"
+				    y = "#FF0000"
+				    time.sleep(.5)
+				    GPIO.output(17,GPIO.LOW)
+				    no1 = "Stealth Mode: ON"
+				    y = "#000000"
+				    togglea = True
+		    return render_template("annoy.html", no1=no1, y=y)
+    if __name__ == "__main__":
+    	app.run(host="0.0.0.0", port=80)
+
+</pre>
+</details>
+</details>
+
+## The Big Projects
+Putting the stuff together.
+### Headless 
 We made use of the accelerometer in this project, grabbing data from it then plotting points on a screen. We also added a "Light Mode" and "Dark Mode" which was inspired by the, then new, iphone light and dark modes.
+stuff
+<details>
+<summary>Code</summary>
+<br>
+    <pre>
+    
+    import time
+
+    import Adafruit_LSM303
+    import math
+
+    lsm303 = Adafruit_LSM303.LSM303()
+
+    #lsm303 = Adafruit_LSM303.LSM303(busum=2)
+
+    import Adafruit_GPIO.SPI as SPI
+    import Adafruit_SSD1306
+
+    from PIL import Image
+    from PIL import ImageDraw
+    from PIL import ImageFont
+
+    RST = 24
+
+    DC = 23
+    SPI_PORT = 0
+    SPI_DEVICE = 0
+
+    disp = Adafruit_SSD1306.SSD1306_128_64(rst=RST, i2c_address=0x3d)
+
+    disp.begin()
+
+    disp.clear()
+    disp.display()
+
+    scrnwidth = disp.width
+    scrnheight = disp.height
+    image = Image.new('1', (scrnwidth, scrnheight))
+    image2 = Image.new('1', (scrnwidth, scrnheight))
+
+    draw = ImageDraw.Draw(image)
+    draw2 = ImageDraw.Draw(image2)
+
+    padding = 2
+    shape_width = 20
+    top = padding
+    bottom = scrnheight-padding
+
+    font = ImageFont.load_default()
+
+    Dark_Mode = True
+    bgcol = 0
+    txtcol = 255
+
+    if Dark_Mode == False:
+        bgcol = 0
+        txtcol = 255
+    else:
+        bgcol = 255
+        txtcol = 0
+
+    points = [0,0]
+    a = 1
+    x = 0
+    y = 0
+    l = 0
+    X = 0
+    z = 1
+    while True:
+        draw.rectangle((0,0,scrnwidth,scrnheight), outline= int(bgcol), fill= int(bgcol))
+    
+        # Read the X, Y, Z axis acceleration values and print them.
+        accel, mag = lsm303.read()
+       # Grab the X, Y, Z components from the reading and print them out.
+        accel_x, accel_y, accel_z = accel
+        mag_x, mag_y, mag_z = mag
+
+       z = int(accel_z) * (9.81/1024)
+
+       z = round(z, 3)
+
+       z = z * 2
+
+        points.insert(0, z)
+
+        l = len(points)
+        if l == 56:
+            points.pop(55)
+    
+        # Write the text.
+       draw2.text((80, 0), 'a (m/s' + u"\u00B2" + ')', font=font, fill= int(txtcol))
+        w = image2.rotate(90, expand=1)
+        image.paste(w)
+        draw.text((50, 54), 't (s)',  font=font, fill= int(txtcol))
+    
+        for v in points:
+            y = 49 - int(v)
+            X = x + 14
+            draw.point((X, y), fill= (txtcol))
+            x = x + 2
+            #disp.image(image)
+            #disp.display()
+
+        draw.line((13,0,13,49), fill= int(txtcol))
+        draw.line((14,49,127,49), fill= int(txtcol))
+
+        # Display image.
+       disp.image(image)
+       disp.display()
+
+        x = 0
+</pre>
+</details>
+</details>We made use of the accelerometer in this project, grabbing data from it then plotting points on a screen. We also added a "Light Mode" and "Dark Mode" which was inspired by the, then new, iphone light and dark modes.
 stuff
 <details>
 <summary>Code</summary>
@@ -516,49 +716,65 @@ stuff
 </details>
 </details>
 
-## Flask & Son
-### Hello Flask
-stuff
-<details>
-<summary>Code</summary>
-<br>
-    <pre>
-
-</pre>
-</details>
-</details>
-
-### Hydro Flask
-stuff
-<details>
-<summary>Code</summary>
-<br>
-    <pre>
-
-</pre>
-</details>
-</details>
-
-## Big Boi Projects
-Putting the stuff together
-### Headless 
-spanish inquisition?
-<details>
-<summary>Code</summary>
-<br>
-    <pre>
-
-</pre>
-</details>
-</details>
-
 ### Pi Camera 
-we see you
+We used the pi to take photos and, while it's no snapchat, it does have some filters. 
 <details>
-<summary>Code</summary>
+<summary>Code 1</summary>
+<br>
+    <pre>
+   
+    from picamera import PiCamera
+    from time import sleep
+
+    myCamera = PiCamera()
+
+    myCamera.start_preview()
+    sleep(5)
+    myCamera.stop_preview()
+</pre>
+</details>
+</details>
+
+<details>
+<summary>Code 2</summary>
 <br>
     <pre>
 
+    from picamera import PiCamera
+    from time import sleep
+
+    myCamera = PiCamera()
+
+    x = -5
+    myCamera.start_preview()
+    for effect in myCamera.IMAGE_EFFECTS:
+       myCamera.image_effect = effect
+       myCamera.annotate_text = "Effect = %s" % effect
+        sleep(5)
+        if x < 5 and x > 0:
+            myCamera.capture('/home/pi/Desktop/image%s.jpg' % x)
+        if x < 6:
+            x = x + 1
+    myCamera.stop_preview()
+</pre>
+</details>
+</details>
+
+<details>
+<summary>Code 3</summary>
+<br>
+    <pre>
+
+    from picamera import PiCamera
+    from time import sleep
+
+    myCamera = PiCamera()
+
+    myCamera.start_preview()
+    myCamera.start_recording('/home/pi/Desktop/myvid.h264')
+    sleep(10)
+    myCamera.stop_recording()
+    myCamera.stop_preview()
 </pre>
 </details>
 </details>
