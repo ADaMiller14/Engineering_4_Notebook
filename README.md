@@ -406,6 +406,7 @@ stuff
 <summary>Code</summary>
 <br>
     <pre>
+    
     import time
 
     import Adafruit_LSM303
