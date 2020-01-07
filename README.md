@@ -696,7 +696,7 @@ We had to modify an alarm to make it go off using the pi. It wasn't too hard, al
 </details>
 
 <details>
-<summary>html Code</summary>
+<summary>Actual Code</summary>
 <br>
     <pre>
 	from flask import Flask, render_template, request
