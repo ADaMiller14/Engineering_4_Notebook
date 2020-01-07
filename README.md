@@ -15,7 +15,6 @@
     - 3.1 [Bash](https://github.com/ADaMiller14/Engineering_4_Notebook#Bash)
     - 3.2 [Python](https://github.com/ADaMiller14/Engineering_4_Notebook#Python)
     - 3.3 [SSH](https://github.com/ADaMiller14/Engineering_4_Notebook#SSH)
-    - 3.4 [12C](https://github.com/ADaMiller14/Engineering_4_Notebook#12C)
   
 4) [Flask & Son](https://github.com/ADaMiller14/Engineering_4_Notebook#Flask-&-Son)
     - 4.1 [Hello Flask](https://github.com/ADaMiller14/Engineering_4_Notebook#Hello-Flask)
@@ -398,8 +397,6 @@ This was the saem as the previous project and, just like bash, we can't retrieve
 
 ### SSH
 For this project we used out phones to turn off and on an LED via a wireless connection. There wasn't really code to it due to the nature of the assignment.
-
-### 12C
 
 
 ## Flask & Son
