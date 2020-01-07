@@ -780,7 +780,7 @@ We used the pi to take photos and, while it's no snapchat, it does have some fil
 </details>
 
 ### Hack Your Stuff 
-we see you more now
+We had to modify an alarm to make it go off using the pi. It wasn't too hard, albeit a bit hard on our ears...
 <details>
 <summary>html Code</summary>
 <br>
@@ -814,7 +814,7 @@ we see you more now
 <br>
     <pre>
 	from flask import Flask, render_template, request
-import RPi.GPIO as GPIO
+	import RPi.GPIO as GPIO
 	import time
 
 	GPIO.setwarnings(False)
@@ -865,12 +865,4 @@ import RPi.GPIO as GPIO
 </details>
 
 ### Copypasta 
-how'd the italian chef die? He copypasta way
-<details>
-<summary>Code</summary>
-<br>
-    <pre>
-
-</pre>
-</details>
-</details>
+Project one was a parent detector. We used the motion sensor to trigger the alarm whenever motion occured. We don't have the code, however, for this assignment there was a step by step tutorial qwhich we followed exactly.
